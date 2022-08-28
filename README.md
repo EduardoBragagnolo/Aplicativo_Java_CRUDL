@@ -117,3 +117,29 @@ public class TelaInicialController  {
               
     }
 }
+![Screenshot_2](https://user-images.githubusercontent.com/108675590/187092688-22fe6d96-7d82-4b1e-9d30-52e2b39a9499.png)
+
+# Criando a conexão com o banco de dados:
+
+
+package com.mycompany.zcondo;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+        
+public class ConnectionSingleton {
+    
+    private static Connection connection;
+    
+    static Connection getConnection() throws SQLException {
+        
+        if (connection == null){
+            
+            connection = DriverManager.getConnection ("jdbc:mysql://localhost:3306/mydb","root","root");
+        }  
+        return connection;
+   
+    }
+    
+}
