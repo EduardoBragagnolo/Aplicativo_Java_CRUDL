@@ -1,11 +1,16 @@
 # Aplicativo_Java_CRUDL
 
-Projeto de software desenvolvido em Java, utilizando o CRUDL para escrita no banco de dados.
+Projeto de software desenvolvido em Java para gestão de condomínios, capaz de:
+
+* reservar espaços;
+* adicionar/excluir/editar moradores;
+* adicionar notificações.
 
 Para desenvolvimento foram usados Netbeans para desenvolvimento do código, MySQL Workbench para o banco de dados e o Gluon Scene Builder para as interfaces.
 
 # Pré-requisitos:
 
+* Java 18.0.1;
 * IDE da sua preferência;
 * Software para banco de dados
 * Software para desenolver a interface.
